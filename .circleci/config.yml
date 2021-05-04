@@ -4,4 +4,4 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run
+      - cypress/run --record --key 482fad40-16d9-4adb-9d20-ebb5260d3de1
