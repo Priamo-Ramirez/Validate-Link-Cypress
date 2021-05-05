@@ -7,5 +7,6 @@ workflows:
       - cypress/run
   test-record:
     jobs:
+    context: Cypress Variables
       - cypress/run:
           record: true
