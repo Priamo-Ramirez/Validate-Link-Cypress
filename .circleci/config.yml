@@ -2,6 +2,10 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@1.28.0
 workflows:
-  build:
+  test:
     jobs:
       - cypress/run
+  test-record:
+    jobs:
+      - cypress/run:
+          record: true
