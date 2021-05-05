@@ -2,11 +2,14 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@1.28.0
 workflows:
+  env-variables:
+    jobs:
+      - build:
+          context: Cypress Variables
   test:
     jobs:
       - cypress/run
   test-record:
     jobs:
-    context: Cypress Variables
       - cypress/run:
           record: true
